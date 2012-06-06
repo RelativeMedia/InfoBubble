@@ -1,5 +1,7 @@
 ### Description
-Clone of Google Maps InfoBubble Library by **Luke Mahe** and **Chris Broadfoot** with some optimizations and new features.
+Clone of Google Maps InfoBubble Library by **Luke Mahe** and **Chris Broadfoot** with some optimizations and new features. I developed these chanegs to provide a more capable customziation ability for this library. This library allows you to add css3 based infoWindows along with tabbing. My modifications enable you to specify tab coloring for active, and inactive tabs. As well as defining seperate padding for tabs and removed the lockout for `borderWidth = 0`.
+
+You can see the entire library in its original code at: http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobubble/examples/example.html
 
 ### New Features
 
