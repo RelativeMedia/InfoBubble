@@ -1,0 +1,52 @@
+html, body {
+  font-family:arial, helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#map_canvas {
+  height: 100%;
+}
+.phoney{
+	z-index: 99 !important;
+	width: 100% !important;
+	height: 100% !important;
+	background-image: linear-gradient(top, #B52F2F 29%, #AB2424 68%);
+	background-image: -o-linear-gradient(top, #B52F2F 29%, #AB2424 68%);
+	background-image: -moz-linear-gradient(top, #B52F2F 29%, #AB2424 68%);
+	background-image: -webkit-linear-gradient(top, #B52F2F 29%, #AB2424 68%);
+	background-image: -ms-linear-gradient(top, #B52F2F 29%, #AB2424 68%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.29, #B52F2F),
+		color-stop(0.68, #AB2424)
+	);
+	border-radius: 10px;
+	position: relative;
+}
+.phoneyContent{
+	color:white;
+	font-size:12px;
+	padding:10px;
+}
+.tabClass, .activeTabClass{
+	color: white;
+	font-size:10px;
+	font-weight:bold;
+	bottom:-1px;
+}
+/**
+ * This is the class for the styling for all classes,
+ * except those that are active
+ */
+.tabClass{
+	margin-bottom:-5px;
+	background-color:#8c1f1f !important;
+	
+}
+.activeTabClass{
+	background-color: #b52f2f !important;
+}
