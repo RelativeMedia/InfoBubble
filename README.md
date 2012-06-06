@@ -8,10 +8,12 @@ Clone of Google Maps InfoBubble Library by **Luke Mahe** and **Chris Broadfoot**
     * Default tab padding is set to 10px, like the InfoBubble
   * Removed the outerArrow lockout for no borderWidth
   
+### Planned Features
+
+ * segregate the ArrowColor and borderColor
 
 ### Documentation
 The new features can be defined the same way all the other options are defined by adding them when you call a new `InfoBubble` class.
-#### Defining an active tab class
 
 ```Javascript
 infoBubble2 = new InfoBubble({
@@ -59,3 +61,10 @@ infoBubble2 = new InfoBubble({
     arrowStyle: 0
   });
 ```
+
+### Credits
+I would like to give props to the following people, as the majority of this work is built and maintained by them and not me. I have only made a few key modifications to the library for my needs and shared with the world.
+
+* Luke Mahe @lukemahe
+* Charles Broadfoot
+* Many others on the Google Maps Team
