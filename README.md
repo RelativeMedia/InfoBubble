@@ -66,5 +66,5 @@ infoBubble2 = new InfoBubble({
 I would like to give props to the following people, as the majority of this work is built and maintained by them and not me. I have only made a few key modifications to the library for my needs and shared with the world.
 
 * Luke Mahe @lukemahe
-* Charles Broadfoot
+* Chris Broadfoot
 * Many others on the Google Maps Team
