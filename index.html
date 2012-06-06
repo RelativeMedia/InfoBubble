@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Infobubble : Clone of Google Maps InfoBubble Library With Some Optimizations and new features" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Infobubble</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/gorelative/InfoBubble">View on GitHub</a>
+
+          <h1 id="project_title">Infobubble</h1>
+          <h2 id="project_tagline">Clone of Google Maps InfoBubble Library With Some Optimizations and new features</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/gorelative/InfoBubble/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/gorelative/InfoBubble/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Description</h3>
+
+<p>Clone of Google Maps InfoBubble Library by <strong>Luke Mahe</strong> and <strong>Chris Broadfoot</strong> with some optimizations and new features.</p>
+
+<h3>New Features</h3>
+
+<ul>
+<li>Active Tab CSS Class Definition</li>
+<li>Tab Padding Definition
+
+<ul>
+<li>Default tab padding is set to 10px, like the InfoBubble</li>
+</ul>
+</li>
+<li>Removed the outerArrow lockout for no borderWidth</li>
+</ul><h3>Planned Features</h3>
+
+<ul>
+<li>segregate the ArrowColor and borderColor</li>
+</ul><h3>Documentation</h3>
+
+<p>The new features can be defined the same way all the other options are defined by adding them when you call a new <code>InfoBubble</code> class.</p>
+
+<div class="highlight">
+<pre><span class="nx">infoBubble2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">InfoBubble</span><span class="p">({</span>
+    <span class="nx">position</span><span class="o">:</span> <span class="nx">myLatlng</span><span class="p">,</span>
+    <span class="nx">minWidth</span><span class="o">:</span> <span class="mi">240</span><span class="p">,</span>
+    <span class="nx">minHeight</span><span class="o">:</span> <span class="mi">220</span><span class="p">,</span>
+    <span class="nx">shadowStyle</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nx">padding</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="cm">/**</span>
+<span class="cm">     * Padding around the tabs, now set seperately</span>
+<span class="cm">     * from the InfoBubble padding</span>
+<span class="cm">     **/</span>
+    <span class="nx">tabPadding</span><span class="o">:</span> <span class="mi">12</span><span class="p">,</span>
+    <span class="cm">/** </span>
+<span class="cm">     * You can set the background color to transparent, </span>
+<span class="cm">     * and define a class instead</span>
+<span class="cm">     **/</span>
+    <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s1">'transparent'</span><span class="p">,</span>
+    <span class="nx">borderRadius</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="nx">arrowSize</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nx">borderWidth</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="cm">/**</span>
+<span class="cm">     * Now that there is no borderWidth check, </span>
+<span class="cm">     * you can define a borderColor and it will </span>
+<span class="cm">     * apply to Just the arrow</span>
+<span class="cm">     **/</span>
+    <span class="nx">borderColor</span><span class="o">:</span> <span class="s1">'#AB2424'</span><span class="p">,</span>
+    <span class="nx">disableAutoPan</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nx">hideCloseButton</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nx">arrowPosition</span><span class="o">:</span> <span class="mi">30</span><span class="p">,</span>
+    <span class="cm">/** </span>
+<span class="cm">     * use the .phoney class to define all styling </span>
+<span class="cm">     * for your InfoBubble</span>
+<span class="cm">     **/</span>
+    <span class="nx">backgroundClassName</span><span class="o">:</span> <span class="s1">'phoney'</span><span class="p">,</span>
+    <span class="cm">/**</span>
+<span class="cm">     * define a CSS class name for all, this is </span>
+<span class="cm">     * technically the "inactive" tab class</span>
+<span class="cm">     **/</span>
+    <span class="nx">tabClassName</span><span class="o">:</span> <span class="s1">'tabClass'</span><span class="p">,</span>
+    <span class="cm">/**</span>
+<span class="cm">     * define a CSS class name for active tabs only</span>
+<span class="cm">     **/</span>
+    <span class="nx">activeTabClassName</span><span class="o">:</span> <span class="s1">'activeTabClass'</span><span class="p">,</span>
+    <span class="nx">arrowStyle</span><span class="o">:</span> <span class="mi">0</span>
+  <span class="p">});</span>
+</pre>
+</div>
+
+
+<h3>Credits</h3>
+
+<p>I would like to give props to the following people, as the majority of this work is built and maintained by them and not me. I have only made a few key modifications to the library for my needs and shared with the world.</p>
+
+<ul>
+<li>Luke Mahe @lukemahe</li>
+<li>Charles Broadfoot</li>
+<li>Many others on the Google Maps Team</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Infobubble maintained by <a href="https://github.com/gorelative">gorelative</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
