@@ -93,6 +93,9 @@ function InfoBubble(opt_options) {
   if (options['arrowStyle'] == undefined) {
     options['arrowStyle'] = this.ARROW_STYLE_;
   }
+  if(options['closeSrc'] == undefined){
+    options['closeSrc'] = this.CLOSE_SRC_;
+  }
 
   this.buildDom_();
 
@@ -116,6 +119,13 @@ InfoBubble.prototype.ARROW_SIZE_ = 15;
  */
 InfoBubble.prototype.ARROW_STYLE_ = 0;
 
+
+/**
+ * Default arrow style
+ * @const
+ * @private
+ */
+InfoBubble.prototype.CLOSE_SRC_ = 'http://maps.gstatic.com/intl/en_us/mapfiles/iw_close.gif';
 
 /**
  * Default shadow style
@@ -225,7 +235,7 @@ InfoBubble.prototype.buildDom_ = function() {
   close.style['border'] = 0;
   close.style['zIndex'] = this.baseZIndex_ + 1;
   close.style['cursor'] = 'pointer';
-  close.src = 'http://maps.gstatic.com/intl/en_us/mapfiles/iw_close.gif';
+  close.src = options['closeSrc'];
 
   var that = this;
   google.maps.event.addDomListener(close, 'click', function() {
