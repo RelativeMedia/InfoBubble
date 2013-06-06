@@ -98,7 +98,13 @@ function InfoBubble(opt_options) {
 
   this.setValues(options);
 }
-window['InfoBubble'] = InfoBubble;
+
+if (typeof define === 'function' && define.amd) {
+  define('infobubble', ['google'], function() { return InfoBubble; });
+}
+if (typeof window === 'object') {
+  window['InfoBubble'] = InfoBubble;
+}
 
 
 /**
